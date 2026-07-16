@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  bot:
+    image: ghcr.io/make-kyiv-great-again/svitliachok-telegram-bot:latest
+    container_name: svitliachok_bot_prod
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - bot_data_prod:/data
+    networks:
+      - proxy-network
+
+volumes:
+  bot_data_prod:
+
+networks:
+  proxy-network:
+    external: true
