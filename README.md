@@ -2,6 +2,12 @@
 
 A Telegram bot to interface with the Svitliachok API.
 
+## Features
+
+- **Authentication**: Register and log in to your account.
+- **Business Management**: Create and manage your business profiles.
+- **Blackout Management**: Report and manage power outage schedules or status.
+
 ## Setup
 
 1. Create a virtual environment:
